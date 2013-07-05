@@ -1,8 +1,8 @@
 typography = {
 	init: function() {
-		typography.preventLonelyWords();
+		typography.preventWidows();
 	},
-	preventLonelyWords: function() {
+	preventWidows: function() {
 		$('p, li, h1, h2, h3, h4, a').each(function() {
 			var $this = $(this),
 				textNodes = typography.getTextNodesIn(this);
